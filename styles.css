@@ -4,14 +4,17 @@ body {
     color: #e5e7eb;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 30px 15px;  
 }
 
 .calculator {
     background: #1e293b;
     padding: 25px;
-    width: 340px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 14px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.45);
     text-align: center;
@@ -99,4 +102,5 @@ button:hover {
 .footer-text {
     text-transform: uppercase;
 }
+
 
