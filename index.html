@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Combustible - Nuevo Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- LOGO -->
+    <img src="logo-nuevo-tiempo.png" alt="Nuevo Tiempo" class="logo">
+
+    <h1>Calculadora de Combustible</h1>
+    <p class="subtitle">Viajes desde Chillán</p>
+
+    <label>Ciudad destino</label>
+    <select id="ciudad">
+        <option value="">Selecciona una ciudad</option>
+        <!-- <option>Arica</option>
+        <option>Alto Hospicio</option>
+        <option>Antofagasta</option>
+        <option>Caldera</option>
+        <option>Copiapó</option>
+        <option>Coquimbo</option>
+        <option>Los Vilos</option>
+        <option>Rapa Nui</option>
+        <option>Viña del mar</option>
+        <option>Villa Alemana</option>
+        <option>San Antonio</option>
+        <option>Santiago</option>
+        <option>Curicó</option>
+        <option>Constitución</option>
+        <option>Empedrado</option>
+        <option>Cauquenes</option>
+        <option>Talcahuano</option>
+        <option>Los Angeles</option>
+        <option>Curanilahue</option>
+        <option>Cañete</option>
+        <option>Tirúa</option>
+        <option>Angol</option>
+        <option>Victoria</option>
+        <option>Traiguén</option>
+        <option>Troyo</option>
+        <option>Curacautión</option>
+        <option>Lautaro</option>
+        <option>Pedregoso</option>
+        <option>Temuco</option>
+        <option>Nueva Imperial</option>
+        <option>Teodoro Schmidt</option>
+        <option>Loncoche</option>
+        <option>Trovolhue</option>
+        <option>Valdivia</option>
+        <option>La Unión</option>
+        <option>Puerto Montt</option>
+        <option>Castro</option>
+        <option>Ancud</option>
+        <option>Futaleufú</option>
+        <option>Puerto Aysén</option>
+        <option>Coyhaique</option>
+        <option>Punta Arenas</option>  -->
+
+    </select>
+
+    <label>Precio combustible ($/litro)</label>
+    <input type="number" id="precio" value="1000">
+
+    <label>Rendimiento (km/l)</label>
+    <input type="number" id="rendimiento" value="10">
+
+    <label>Factor de consumo</label>
+    <input type="number" step="0.1" id="factor" value="1.4">
+
+    <div class="results">
+        <p><strong>Distancia:</strong> <span id="distancia">--</span> km</p>
+        <p><strong>Tiempo de viaje:</strong> <span id="tiempo">--</span> hrs</p>
+        <p class="total"><strong>Costo final:</strong> $ <span id="costo">--</span></p>
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+
+   <p class="footer-text">Depto. de ingeniería</p>
+
+<script src="script.js"></script>
+</body>
+</html>
